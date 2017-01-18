@@ -10,7 +10,7 @@ Some rules I implemented
         nsl: 'There should not be any special character'
         
         
- * you can yours too
+ * you can use your custom  other validations  too
  
  Use these in html form like 
  
