@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="deeps_validator.js">
+
+    </script>
+    <script>
+        function callValidate(form)
+        {
+         deeps_validator(form,function(result){
+             console.log(result);
+         });
+        }
+    </script>
+</head>
+<body>
+<form id="myform">
+   <!--// <input name="username" type="text" validate="req min:3 max:10 " >-->
+    <input name="username" type="text" validate="req max:10" >
+    <input name="email" type="email" validate="req vem"  >
+    <input name="phonenumber" type="text" validate="req num min:10 max:10" >
+
+
+
+
+
+</form>
+<button onclick="callValidate(document.getElementById('myform'))">Validate</button>
+</body>
+</html>
