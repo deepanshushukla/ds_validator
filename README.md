@@ -1,6 +1,6 @@
 # ds_validator 
-##File contains a simple way to implement validation to your html for 
-###Some implemented rules are :-
+## File contains a simple way to implement validation to your html for 
+### Some implemented rules are :-
 
     * req: "This is a mandatory field",
     * min: "This field doesn't meet minimum length criteria",
@@ -22,7 +22,7 @@
 </form>
 ``` 
 
-###Just  create a validate attribute and give those rules which will priorities sequntially 
+### Just  create a validate attribute and give those rules which will priorities sequntially 
 #### on form submit call deeps_validator 
  ```javascript
 function callValidate(form)
