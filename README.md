@@ -12,7 +12,7 @@ Some rules I implemented
         
  * you can use your custom  other validations  too
  
- Use these in html form like 
+ Use this in html form like 
  
  <form id="myform">
    <!--// <input name="username" type="text" validate="req min:3 max:10 " >-->
@@ -23,12 +23,15 @@ Some rules I implemented
 
 //just  create a validate attribute and give those rules which will prorities sequntially 
  // call on submit 
-  function callValidate(form)
+ ```javascript
+function callValidate(form)
         {
          deeps_validator(form,function(result){
              console.log(result);
          });
         }
+ ```
+  
 
 // if any error come  you will get JSON Response 
 {"status":1,
