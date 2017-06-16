@@ -1,6 +1,6 @@
 # ds_validator 
 File contains a simple way to implement validation to your html for 
-Some rules I implemented 
+Some implemented rules are :-
 
     * req: "This is a mandatory field",
     * min: "This field doesn't meet minimum length criteria",
@@ -10,20 +10,20 @@ Some rules I implemented
     * nsl: 'There should not be any special character'
 
         
- * you can use your custom  other validations  too
+ * you can create your own validation methods by simply adding  them to library 
  
- Use this in html form like 
+ Example usage 
  ```
  <form id="myform">
-   <!--// <input name="username" type="text" validate="req min:3 max:10 " >-->
+   <input name="username" type="text" validate="req min:3 max:10 " >
     <input name="username" type="text" validate="req max:10" >
     <input name="email" type="email" validate="req vem"  >
     <input name="phonenumber" type="text" validate="req num min:10 max:10" >
 </form>
 ``` 
 
-//just  create a validate attribute and give those rules which will prorities sequntially 
- // call on submit 
+//Just  create a validate attribute and give those rules which will priorities sequntially 
+// on form submit call deeps_validator 
  ```javascript
 function callValidate(form)
         {
@@ -34,7 +34,7 @@ function callValidate(form)
  ```
   
 
-// if any error come  you will get JSON Response 
+// Any Error will give you JSON Response 
 ```
 {
 	"status": 1,
