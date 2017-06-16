@@ -34,12 +34,32 @@ function callValidate(form)
   
 
 // if any error come  you will get JSON Response 
-{"status":1,
-"response":
-[
-{"element":{},
-"name":"username",
-"req":"This is a mandatory field"},
-{"element":{},"name":"email","req":"This is a mandatory field"},{"element":{},"name":"email","vem":"Please Enter a valid Email"},{"element":{},"name":"phonenumber","req":"This is a mandatory field"},{"element":{},"name":"phonenumber","min":"This field doesn't meet minimum length criteria"}]}
-
+```javascript
+{
+	"status": 1,
+	"response": [{
+			"element": {},
+			"name": "username",
+			"req": "This is a mandatory field"
+		},
+		{
+			"element": {},
+			"name": "email",
+			"req": "This is a mandatory field"
+		}, {
+			"element": {},
+			"name": "email",
+			"vem": "Please Enter a valid Email"
+		}, {
+			"element": {},
+			"name": "phonenumber",
+			"req": "This is a mandatory field"
+		}, {
+			"element": {},
+			"name": "phonenumber",
+			"min": "This field doesn't meet minimum length criteria"
+		}
+	]
+}
+```
 
