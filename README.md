@@ -1,14 +1,13 @@
 # ds_validator 
 File contains a simple way to implement validation to your html for 
 Some rules I implemented 
-        req: "This is a mandatory field",
-        min: "This field doesn't meet minimum length criteria",
-        max: "This field doesn't meet maximum, length criteria",
-        num: "Please Enter Numeric data", //should contain only numbers
-        vem: 'Please Enter a valid Email',
-        alp: 'Please Enter Alphanumeric String',
-        nsl: 'There should not be any special character'
-        
+    * req: "This is a mandatory field",
+    * min: "This field doesn't meet minimum length criteria",
+    * max: "This field doesn't meet maximum, length criteria",
+    * num: "Please Enter Numeric data", //should contain only numbers
+    * vem: 'Please Enter a valid Email',
+    * nsl: 'There should not be any special character'
+
         
  * you can use your custom  other validations  too
  
