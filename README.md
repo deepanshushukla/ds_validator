@@ -1,6 +1,7 @@
 # ds_validator 
 File contains a simple way to implement validation to your html for 
 Some rules I implemented 
+
     * req: "This is a mandatory field",
     * min: "This field doesn't meet minimum length criteria",
     * max: "This field doesn't meet maximum, length criteria",
