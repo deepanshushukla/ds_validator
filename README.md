@@ -13,13 +13,14 @@ Some rules I implemented
  * you can use your custom  other validations  too
  
  Use this in html form like 
- 
+ ```
  <form id="myform">
    <!--// <input name="username" type="text" validate="req min:3 max:10 " >-->
     <input name="username" type="text" validate="req max:10" >
     <input name="email" type="email" validate="req vem"  >
     <input name="phonenumber" type="text" validate="req num min:10 max:10" >
 </form>
+``` 
 
 //just  create a validate attribute and give those rules which will prorities sequntially 
  // call on submit 
@@ -34,7 +35,7 @@ function callValidate(form)
   
 
 // if any error come  you will get JSON Response 
-```javascript
+```
 {
 	"status": 1,
 	"response": [{
